@@ -14,7 +14,7 @@ A `snippet` is a piece of code which behaves in the same way we define it.
 
 Some of my useful `aliases and snippets `  :  
 
-**general purpose**
+>**general purpose**
 
 ```shell
 #clear screen in terminal
@@ -116,4 +116,43 @@ function whatsmyip ()
 }
 
 ```
+>**git cli aliases**
 
+```shell
+#git commands
+alias s="git status"
+alias p="git push"
+alias add="git add ."
+alias m="git merge"
+alias commit="git commit"
+```
+
+>**programming snippets**
+
+```shell
+#run cpp-file
+cpp-run() {
+    echo "Compiling file..."
+    g++ -o "$1" "$1.cpp"
+    echo "Compiled! "
+    ./"$1"
+}
+```
+```shell
+#run c-file
+c-run() {
+    echo "Compiling file..."
+    gcc -o "$1" "$1.c"
+    echo "Compiled! Enter input :D"
+    ./"$1"
+}
+```
+```shell
+#run py-file
+py-run() {
+    echo "Compiling file ..."
+    python ./"$1.py"
+}
+```
+
+*the above programming snippets only run when the program takes no input from the user*
