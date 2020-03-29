@@ -107,7 +107,6 @@ copy ()
 }
 ```
 ```shell
-
 # IP address lookup
 alias whatismyip="whatsmyip"
 function whatsmyip ()
@@ -121,7 +120,6 @@ function whatsmyip ()
 	# External IP Lookup
 	echo -n "External IP: " ; wget http://smart-ip.net/myip -O - -q
 }
-
 ```
 ### git_cli_aliases
 
