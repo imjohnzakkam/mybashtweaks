@@ -53,7 +53,7 @@ alias up="sudo apt-get update"
 
 ```shell
 #shoutdown aliases
-alias sn="sudo shutdown now"
+alias off="sudo shutdown now"
 alias ss="sudo shutdown -r now"
 alias sf="sudo shutdown -r -n now"
 ```
