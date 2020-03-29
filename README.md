@@ -165,7 +165,7 @@ py-run() {
 
 *the above programming snippets only run when the program takes no input from the user*
 
-## CP_aliases
+## CP_snippets
 
 ```shell
 #compile cpp-file
