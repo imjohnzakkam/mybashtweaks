@@ -14,9 +14,9 @@ A `snippet` is a piece of code which behaves in the same way we define it.
 
 # Contents : 
 
-- [general purpose aliases](general_purpose)
-- [git cli aliases](git_cli_aliases)
-- [programming snippets](programming_snippets)
+- [general purpose aliases](#general_purpose)
+- [git cli aliases](#git_cli_aliases)
+- [programming snippets](#programming_snippets)
 
 Some of my useful `aliases and snippets `  :  
 
