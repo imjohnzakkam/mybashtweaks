@@ -12,9 +12,15 @@ Since we all work everyday in Linux, some aliases/snippets could be useful.
 An `alias` means as the name suggests, we call something instead of something else.  
 A `snippet` is a piece of code which behaves in the same way we define it.  
 
+# Contents : 
+
+- [general purpose aliases](general_purpose)
+- [git cli aliases](git_cli_aliases)
+- [programming snippets](programming_snippets)
+
 Some of my useful `aliases and snippets `  :  
 
-### general purpose
+### general_purpose
 
 ```shell
 #clear screen in terminal
@@ -116,7 +122,7 @@ function whatsmyip ()
 }
 
 ```
-### git cli aliases
+### git_cli_aliases
 
 ```shell
 #git commands
@@ -128,7 +134,7 @@ alias m="git merge"
 alias commit="git commit"
 ```
 
-### programming snippets
+### programming_snippets
 
 ```shell
 #run cpp-file
