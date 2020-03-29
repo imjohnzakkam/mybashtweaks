@@ -152,7 +152,7 @@ cpp-run() {
 c-run() {
     echo "Compiling file..."
     gcc -o "$1" "$1.c"
-    echo "Compiled! Enter input :D"
+    echo "Compiled!"
     ./"$1"
 }
 ```
