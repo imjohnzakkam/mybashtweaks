@@ -17,7 +17,7 @@ A `snippet` is a piece of code which behaves in the same way we define it.
 - [general purpose aliases](#general_purpose)
 - [git cli aliases](#git_cli_aliases)
 - [programming snippets](#programming_snippets)
-- [Competitve Programming snippets](#)
+- [Competitve Programming snippets](#CP_aliases)
 
 Some of my useful `aliases and snippets `  :  
 
@@ -164,3 +164,17 @@ py-run() {
 ```
 
 *the above programming snippets only run when the program takes no input from the user*
+
+## CP_aliases
+
+```shell
+#compile cpp-file
+cc() {
+    g++ "$1.cpp"
+    echo "Compiled! "
+}
+#execute cpp-file
+alias o="./a.out"
+```
+
+
