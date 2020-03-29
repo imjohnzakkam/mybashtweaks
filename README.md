@@ -133,6 +133,7 @@ alias pu="git pull"
 alias add="git add ."
 alias m="git merge"
 alias commit="git commit"
+alias cl="git clone"
 ```
 
 ### programming_snippets
