@@ -12,5 +12,40 @@ Since we all work everyday in Linux, some aliases/snippets could be useful.
 An `alias` means as the name suggests, we call something instead of something else.  
 A `snippet` is a piece of code which behaves in the same way we define it.  
 
-Some of my  `aliases and snippets `  :  
+Some of my useful `aliases and snippets `  :  
 
+**general purpose**
+
+```shell
+#clear screen in terminal
+alias c='clear
+```
+```shell
+#change directory aliases
+alias home='cd ~'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+```
+
+```shell
+alias go="cd"
+```
+
+```shell
+# find a file in a directory
+alias f="find . | grep "
+```
+
+```shell
+#system update
+alias up="sudo apt-get update"
+```
+
+```shell
+#shoutdown aliases
+alias sn="sudo shutdown now"
+alias ss="sudo shutdown -r now"
+alias sf="sudo shutdown -r -n now"
+```
