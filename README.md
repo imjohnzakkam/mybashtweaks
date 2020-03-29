@@ -14,7 +14,7 @@ A `snippet` is a piece of code which behaves in the same way we define it.
 
 Some of my useful `aliases and snippets `  :  
 
->**general purpose**
+###general purpose
 
 ```shell
 #clear screen in terminal
@@ -116,7 +116,7 @@ function whatsmyip ()
 }
 
 ```
->**git cli aliases**
+###git cli aliases
 
 ```shell
 #git commands
@@ -127,7 +127,7 @@ alias m="git merge"
 alias commit="git commit"
 ```
 
->**programming snippets**
+###programming snippets
 
 ```shell
 #run cpp-file
