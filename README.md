@@ -30,6 +30,7 @@ alias .....='cd ../../../..'
 ```
 
 ```shell
+#go instead of cd
 alias go="cd"
 ```
 
