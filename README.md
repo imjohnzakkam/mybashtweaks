@@ -176,7 +176,9 @@ cpp() {
 alias o="./a.out"
 ```
 ```shell
-#to get a dir created for codechef or codeforces and copy template to 5 files and paste in the folder in usual path
+
+#for mkdir of a round/contest with 5 files
+
 cf() {
 #you can change the path
 mkdir ~/Desktop/Codeforces/$1
