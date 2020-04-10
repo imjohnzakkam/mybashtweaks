@@ -175,5 +175,8 @@ cc() {
 #execute cpp-file
 alias o="./a.out"
 ```
+```
+#to get a dir created for codechef or codeforces and copy template to 5 files and paste in the folder in usual path
 
+```
 *yet to come, hold on !*
