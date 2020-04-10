@@ -175,9 +175,22 @@ cc() {
 #execute cpp-file
 alias o="./a.out"
 ```
-```
+```shell
 #to get a dir created for codechef or codeforces and copy template to 5 files and paste in the folder in usual path
-code() {
-
+cf() {
+#you can change the path
+mkdir ~/Desktop/Codeforces/$1
+cd ~/Desktop/Codeforces/$1
+#test.cpp is my template file
+cp ~/Desktop/test.cpp ~/Desktop/Codeforces/$1 
+mv test.cpp a.cpp
+cp ~/Desktop/test.cpp ~/Desktop/Codeforces/$1 
+mv test.cpp b.cpp
+cp ~/Desktop/test.cpp ~/Desktop/Codeforces/$1 
+mv test.cpp c.cpp
+cp ~/Desktop/test.cpp ~/Desktop/Codeforces/$1 
+mv test.cpp d.cpp
+cp ~/Desktop/test.cpp ~/Desktop/Codeforces/$1 
+mv test.cpp e.cpp
 }
 ```
