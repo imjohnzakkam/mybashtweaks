@@ -169,7 +169,7 @@ py-run() {
 ```shell
 #compile cpp-file
 cc() {
-    g++ "$1.cpp"
+    g++ -o "$1" "$1.cpp"
     echo "Compiled! "
 }
 #execute cpp-file
