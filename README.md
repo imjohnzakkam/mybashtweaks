@@ -1,25 +1,25 @@
 # mybashtweaks
-bash tweaking is an art they say, yes it is. 
+
+bash tweaking is an art they say, yes it is.
 
 ---
 
 We all know that Linux is open-source right, one day I was exploring random directories, suddenly I opened some file which was all like `They are speaking the language of the gods` meme, it was `~/.bashrc`.  
-So, I thought can I edit it ? , and here I am.  
+So, I thought can I edit it ? , and here I am.
 
-
-Since we all work everyday in Linux, some aliases/snippets could be useful.  
+Since we all work everyday in Linux, some aliases/snippets could be useful.
 
 An `alias` means as the name suggests, we call something instead of something else.  
-A `snippet` is a piece of code which behaves in the same way we define it.  
+A `snippet` is a piece of code which behaves in the same way we define it.
 
-# Contents : 
+# Contents :
 
 - [general purpose aliases](#general_purpose)
 - [git cli aliases](#git_cli_aliases)
 - [programming snippets](#programming_snippets)
 - [Competitve Programming snippets](#CP_snippets)
 
-Some of my useful `aliases and snippets `  :  
+Some of my useful `aliases and snippets` :
 
 ### general_purpose
 
@@ -27,6 +27,7 @@ Some of my useful `aliases and snippets `  :
 #clear screen in terminal
 alias c='clear
 ```
+
 ```shell
 #change directory aliases
 alias home='cd ~'
@@ -67,8 +68,8 @@ alias up="sudo apt-get update"
 # Create a dir and go to the directory
 mkdirgo ()
 {
-	mkdir -p $1
-	cd $1
+  mkdir -p $1
+  cd $1
 }
 ```
 
@@ -76,11 +77,11 @@ mkdirgo ()
 # Move a dir and go to the directory
 mvgo ()
 {
-	if [ -d "$2" ];then
-		mv $1 $2 && cd $2
-	else
-		mv $1 $2
-	fi
+  if [ -d "$2" ];then
+   mv $1 $2 && cd $2
+  else
+   mv $1 $2
+  fi
 }
 ```
 
@@ -88,24 +89,25 @@ mvgo ()
 # Copy file with a progress bar
 copy ()
 {
-	set -e
-	strace -q -ewrite cp -- "${1}" "${2}" 2>&1 \
-	| awk '{
-	count += $NF
-	if (count % 10 == 0) {
-		percent = count / total_size * 100
-		printf "%3d%% [", percent
-		for (i=0;i<=percent;i++)
-			printf "="
-			printf ">"
-			for (i=percent;i<100;i++)
-				printf " "
-				printf "]\r"
-			}
-		}
-	END { print "" }' total_size=$(stat -c '%s' "${1}") count=0
+ set -e
+ strace -q -ewrite cp -- "${1}" "${2}" 2>&1 \
+ | awk {
+ count += $NF
+ if (count % 10 == 0) {
+  percent = count / total_size * 100
+  printf "%3d%% [", percent
+  for (i=0;i<=percent;i++)
+    printf "="
+    printf ">"
+    for (i=percent;i<100;i++)
+      printf " "
+      printf "]\r"
+    }
+  }
+ END { print "" } total_size=$(stat -c '%s' "${1}") count=0
 }
 ```
+
 ```shell
 # IP address lookup
 alias whatismyip="whatsmyip"
@@ -121,6 +123,7 @@ function whatsmyip ()
 	echo -n "External IP: " ; wget http://smart-ip.net/myip -O - -q
 }
 ```
+
 ### git_cli_aliases
 
 ```shell
@@ -145,6 +148,7 @@ cpp-run() {
     ./"$1"
 }
 ```
+
 ```shell
 #run c-file
 c-run() {
@@ -154,6 +158,7 @@ c-run() {
     ./"$1"
 }
 ```
+
 ```shell
 #run py-file
 py-run() {
@@ -162,7 +167,7 @@ py-run() {
 }
 ```
 
-*the above programming snippets only run when the program takes no input from the user*
+_the above programming snippets only run when the program takes no input from the user_
 
 ## CP_snippets
 
@@ -175,6 +180,7 @@ cpp() {
 #execute cpp-file
 alias o="./a.out"
 ```
+
 ```shell
 
 #for mkdir of a round/contest with 5 files
@@ -184,18 +190,19 @@ cf() {
 mkdir ~/Desktop/Codeforces/$1
 cd ~/Desktop/Codeforces/$1
 #test.cpp is my template file
-cp ~/Desktop/test.cpp ~/Desktop/Codeforces/$1 
+cp ~/Desktop/test.cpp ~/Desktop/Codeforces/$1
 mv test.cpp a.cpp
-cp ~/Desktop/test.cpp ~/Desktop/Codeforces/$1 
+cp ~/Desktop/test.cpp ~/Desktop/Codeforces/$1
 mv test.cpp b.cpp
-cp ~/Desktop/test.cpp ~/Desktop/Codeforces/$1 
+cp ~/Desktop/test.cpp ~/Desktop/Codeforces/$1
 mv test.cpp c.cpp
-cp ~/Desktop/test.cpp ~/Desktop/Codeforces/$1 
+cp ~/Desktop/test.cpp ~/Desktop/Codeforces/$1
 mv test.cpp d.cpp
-cp ~/Desktop/test.cpp ~/Desktop/Codeforces/$1 
+cp ~/Desktop/test.cpp ~/Desktop/Codeforces/$1
 mv test.cpp e.cpp
 }
 ```
+
 ```shell
 #similarly for codechef
 cc() {
@@ -203,15 +210,15 @@ cc() {
 mkdir ~/Desktop/Codechef/$1
 cd ~/Desktop/Codechef/$1
 #test.cpp is my template file
-cp ~/Desktop/test.cpp ~/Desktop/Codechef/$1 
+cp ~/Desktop/test.cpp ~/Desktop/Codechef/$1
 mv test.cpp 1.cpp
-cp ~/Desktop/test.cpp ~/Desktop/Codechef/$1 
+cp ~/Desktop/test.cpp ~/Desktop/Codechef/$1
 mv test.cpp 2.cpp
-cp ~/Desktop/test.cpp ~/Desktop/Codechef/$1 
+cp ~/Desktop/test.cpp ~/Desktop/Codechef/$1
 mv test.cpp 3.cpp
-cp ~/Desktop/test.cpp ~/Desktop/Codechef/$1 
+cp ~/Desktop/test.cpp ~/Desktop/Codechef/$1
 mv test.cpp 4.cpp
-cp ~/Desktop/test.cpp ~/Desktop/Codechef/$1 
+cp ~/Desktop/test.cpp ~/Desktop/Codechef/$1
 mv test.cpp 5.cpp
 }
 ```
