@@ -182,8 +182,6 @@ cpp() {
 alias o="./a.out"
 ```
 
-```shell
-
 This is an example what you should enter in your terminal :
 
 ```bash
