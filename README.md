@@ -25,7 +25,7 @@ Some of my useful `aliases and snippets` :
 
 ```shell
 #clear screen in terminal
-alias c='clear
+alias c='clear'
 ```
 
 ```shell
