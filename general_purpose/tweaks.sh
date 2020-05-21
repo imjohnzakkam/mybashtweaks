@@ -1,7 +1,7 @@
 #clear screen in terminal
-alias c='clear
+alias c='clear';
 
-#change directory aliases 
+#change directory aliases
 alias home='cd ~'
 alias ..='cd ..'
 alias ...='cd ../..'
