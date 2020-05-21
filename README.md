@@ -188,7 +188,7 @@ This is an example what you should enter in your terminal :
 cf 642 6
 ```
 
-The above command generates 6 files namely : `a.cpp,b.cpp,c.cpp,d.cpp,e.cpp,f.cpp`,  for you in the ~/Desktop/Codeforces/642 path
+The above command generates 6 files namely : `a.cpp,b.cpp,c.cpp,d.cpp,e.cpp,f.cpp`,  for you in the `~/Desktop/Codeforces/642` path
 
 ```shell
 cf() {
