@@ -184,8 +184,15 @@ alias o="./a.out"
 
 ```shell
 
-#for mkdir of a round/contest with 5 files
+This is an example what you should enter in your terminal :
 
+```bash
+cf 642 6
+```
+
+The above command generates 6 files namely : a.cpp,b.cpp,c.cpp,d.cpp,e.cpp,f.cpp,  for you in the ~/Desktop/Codeforces/642 path
+
+```shell
 cf() {
 # you can change the path
 mkdir ~/Desktop/Codeforces/$1
