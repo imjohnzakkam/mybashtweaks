@@ -21,8 +21,7 @@ do
 	loop=`expr $loop + 1` 
 done 
 }
-```
-```shell
+
 #similarly for codechef
 cc() {
 #you can change the path
@@ -33,9 +32,8 @@ var=( {a..z} )
 while [ $loop -lt $2 ] 
 do
 	# test.cpp is my template file
-	cp ~/Desktop/test.cpp ~/Desktop/Codeforces/$1 
+	cp ~/Desktop/test.cpp ~/Desktop/Codechef/$1 
 	mv test.cpp ${var[a]}.cpp
 	loop=`expr $loop + 1` 
 done 
 }
-```
