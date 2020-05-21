@@ -8,10 +8,10 @@ alias o="./a.out"
 
 
 cf() {
-#you can change the path
+# you can change the path
 mkdir ~/Desktop/Codeforces/$1
 cd ~/Desktop/Codeforces/$1
-#test.cpp is my template file
+# test.cpp is my template file
 cp ~/Desktop/test.cpp ~/Desktop/Codeforces/$1 
 mv test.cpp a.cpp
 cp ~/Desktop/test.cpp ~/Desktop/Codeforces/$1 
