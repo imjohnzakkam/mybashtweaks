@@ -43,11 +43,11 @@ mvgo ()
 }
 
 # Copy file with a progress bar
+# this should work ig
 copy ()
 {
 	set -e
-	strace -q -ewrite cp -- "${1}" "${2}" 2>&1 \
-	| awk '{
+	strace -q -ewrite cp -- "${1}" "${2}" 2>&1 | awk {
 	count += $NF
 	if (count % 10 == 0) {
 		percent = count / total_size * 100
@@ -60,7 +60,7 @@ copy ()
 				printf "]\r"
 			}
 		}
-	END { print "" }' total_size=$(stat -c '%s' "${1}") count=0
+	END { print "" } total_size=$(stat -c '%s' "${1}") count=0
 }
 
 # IP address lookup
@@ -69,10 +69,8 @@ function whatsmyip ()
 {
 	# Dumps a list of all IP addresses for every device
 	# /sbin/ifconfig |grep -B1 "inet addr" |awk '{ if ( $1 == "inet" ) { print $2 } else if ( $2 == "Link" ) { printf "%s:" ,$1 } }' |awk -F: '{ print $1 ": " $3 }';
-
 	# Internal IP Lookup
 	echo -n "Internal IP: " ; /sbin/ifconfig eth0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}'
-
 	# External IP Lookup
 	echo -n "External IP: " ; wget http://smart-ip.net/myip -O - -q
 }

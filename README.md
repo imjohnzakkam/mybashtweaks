@@ -87,6 +87,7 @@ mvgo ()
 
 ```shell
 # Copy file with a progress bar
+#this should work ig
 copy ()
 {
  set -e
